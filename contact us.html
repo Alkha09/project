@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Restaurant</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+        }
+
+        .contact-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        .contact-details {
+            width: 40%;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-details h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .contact-details p {
+            font-size: 1.2rem;
+            line-height: 1.5;
+            color: #555;
+        }
+
+        .contact-form {
+            width: 50%;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+        }
+
+        .input-group label {
+            font-size: 1.1rem;
+            color: #333;
+        }
+
+        .input-group input,
+        .input-group textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .input-group textarea {
+            resize: vertical;
+        }
+
+        .submit-btn {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .submit-btn:hover {
+            background-color: #218838;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        footer p {
+            font-size: 1.1rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .contact-container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .contact-details, .contact-form {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .submit-btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Contact Us - Restaurant Name</h1>
+    </header>
+
+    <div class="contact-container">
+        <!-- Contact Details -->
+        <div class="contact-details">
+            <h2>Restaurant Address</h2>
+            <p>123 Gourmet Street, Foodie City, pin 689624</p>
+
+            <h2>Contact Information</h2>
+            <p>Phone: +1 1234567891 </p>
+            <p>Email: contact@restaurantname.com</p>
+
+            <h2>Opening Hours</h2>
+            <p>Monday to Friday: 9:00 AM - 9:00 PM</p>
+            <p>Saturday - Sunday: 10:00 AM - 10:00 PM</p>
+
+            <h2>Follow Us</h2>
+            <p>Instagram: @restaurantname</p>
+            <p>Facebook: /restaurantname</p>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <h2>Get in Touch</h2>
+
+            <form action="#" method="POST">
+                <div class="input-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required />
+                </div>
+                <div class="input-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required />
+                </div>
+                <div class="input-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Restaurant Name. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
+

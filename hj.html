@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"Foodzipper"</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Playfair Display', serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        /* Landing Section */
+        .landing {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background: url('IMG-20250126-WA0005[1].jpg') center/cover no-repeat;
+            text-align: center;
+        }
+
+        .landing .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .landing h1 {
+            font-size: 4rem;
+            font-weight: bold;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: white;
+        }
+
+        .landing .subtitle {
+            margin: 20px 0;
+            font-size: 1.5rem;
+            color: white;
+        }
+
+        .landing .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            font-size: 1.2rem;
+            text-decoration: none;
+            color: black;
+            background: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+            text-transform: lowercase;
+            font-weight: bold;
+        }
+
+        .landing .btn:hover {
+            background: #e6e6e6;
+        }
+
+        .purchase-gift-btn {
+            padding: 12px 30px;
+            font-size: 1.2rem;
+            margin-top: 20px;
+            text-decoration: none;
+            background: #FFD700;
+            color: white;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .purchase-gift-btn:hover {
+            background: #E6C200;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .landing h1 {
+                font-size: 3rem;
+            }
+
+            .landing .subtitle {
+                font-size: 1.2rem;
+            }
+
+            .landing .btn {
+                font-size: 1rem;
+                padding: 10px 25px;
+            }
+
+            .purchase-gift-btn {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="landing">
+        <div class="content">
+            <h1>What's in My Kitchen!</h1>
+            
+            <!-- Link to Purchase Gift Page -->
+            <button class="purchase-gift-btn" onclick="showPurchaseGift()">Purchase Gift</button>
+        </div>
+    </section>
+
+    <!-- Hidden Gift Purchase Page -->
+    <div id="purchaseGiftPage" style="display: none;">
+        <h2>Gift Purchase</h2>
+        <form action="#">
+            <label for="giftName">Select Gift:</label>
+            <select id="giftName" name="giftName">
+                <option value="giftCard">Gift Card</option>
+                <option value="discountVoucher">Discount Voucher</option>
+                <option value="exclusiveDining">Exclusive Dining Experience</option>
+            </select>
+            <br><br>
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" name="amount" min="10" placeholder="Enter amount" required />
+            <br><br>
+            <button type="submit" class="btn">Purchase Gift</button>
+        </form>
+        <button class="purchase-gift-btn" onclick="hidePurchaseGift()">Back to Home</button>
+    </div>
+
+    <script>
+        function showPurchaseGift() {
+            document.querySelector('.landing').style.display = 'none';
+            document.getElementById('purchaseGiftPage').style.display = 'block';
+        }
+
+        function hidePurchaseGift() {
+            document.querySelector('.landing').style.display = 'block';
+            document.getElementById('purchaseGiftPage').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
+connect this code <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What's in My Kitchen</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Playfair Display', serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            flex-direction: column;
+        }
+
+        /* Navbar Style */
+        .navbar {
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding: 10px 20px;
+            z-index: 10;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navbar ul li {
+            margin: 0 20px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+
+        .navbar ul li a:hover {
+            color: #ff6600; /* Highlight color for hover */
+        }
+
+        /* Landing Section */
+        .landing {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background: url('IMG-20250126-WA0005[1].jpg') center/cover no-repeat;
+            text-align: center;
+            margin-top: 50px; /* Add margin to avoid navbar overlap */
+        }
+
+        .landing .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .landing h1 {
+            font-size: 4rem;
+            font-weight: bold;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: white;
+        }
+
+        .landing .subtitle {
+            margin: 20px 0;
+            font-size: 1.5rem;
+            color: white;
+        }
+
+        .landing .btn{
+            display: inline-block;
+            padding: 12px 30px;
+            font-size: 1.2rem;
+            text-decoration: none;
+            color: black;
+            background: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+            text-transform: lowercase;
+            font-weight: bold;
+        }
+
+        .landing .btn:hover {
+            background: #e6e6e6;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .navbar ul {
+                flex-direction: column;
+            }
+
+            .landing h1 {
+                font-size: 3rem;
+            }
+
+            .landing .subtitle {
+                font-size: 1.2rem;
+            }
+
+            .landing .btn {
+                font-size: 1rem;
+                padding: 10px 25px;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contact us.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Landing Section -->
+    <section class="landing" id="home">
+        <div class="content">
+            <h1>What's in My Kitchen!</h1>
+            <p class="subtitle">Explore recipes from ingredients at hand.</p>
+            <a href="get_started.html" class="btn">Get Started</a>
+        </div>
+    </section>
+
+    <!-- About Us Section (Optional) -->
+    <section id="about-us" style="padding: 50px; background-color: #f8f8f8; text-align: center;">
+        <h2>About Us</h2>
+            </section>
+
+    <!-- Menu Section (Optional) -->
+    <section id="menu" style="padding: 50px; text-align: center; background-color: #ececec;">
+        <h2>Our Menu</h2>
+        
+    </section>
+
+    <!-- Contact Section (Optional) -->
+    <section id="contact" style="padding: 50px; background-color: #f8f8f8; text-align: center;">
+        <h2>Contact Us</h2>
+        
+    </section>
+</body>
+</html>
