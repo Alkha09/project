@@ -1,33 +1,33 @@
-# [Project Name] 🎯
+![home](https://github.com/user-attachments/assets/d21299c6-3385-4151-bbe5-f70f10a5373c)#[whats in my kitchen]🎯
 
 
 ## Basic Details
-### Team Name: [Name]
+### Team Name: [Bugbusters]
 
 
 ### Team Members
-- Member 1: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Member 1: [Alkha] - [LBS institute of technology for women poojappura]
+- Member 2: [Sanmaya A S] - [LBS institute of technology for women poojappura]
+
 
 ### Hosted Project Link
-[mention your project hosted project link here]
 
+[http://127.0.0.1:5500/hj.html]
 ### Project Description
-[2-3 lines about what your project does]
+[This is website for food restaurant where people can see menu and thy can buy food items.]
 
 ### The Problem statement
-[What ridiculous problem are you solving?]
+[This will give a opportunity for homemakers who are interested in cooking and ts gives them a space to earn money and to be financially independent.]
 
 ### The Solution
-[How are you solving it? Keep it fun!]
+[when women start earning she became financially independent and eventually it improves their lifestyle. ]
 
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
+- vs code
+- git hub
+- liveserver
 - [Tools used]
 
 For Hardware:
@@ -47,13 +47,16 @@ For Software:
 For Software:
 
 # Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
+[![home](https://github.com/user-attachments/assets/11fc96fd-10ba-4deb-bf39-91b52b972be2)
+]
 *Add caption explaining what this shows*
 
-![Screenshot2](Add screenshot 2 here with proper name)
+![![pic 1](https://github.com/user-attachments/assets/705107e7-4583-4d87-b08d-e97fc45c033f)
+](pic 1)
 *Add caption explaining what this shows*
 
-![Screenshot3](Add screenshot 3 here with proper name)
+![![pic 2](https://github.com/user-attachments/assets/fd50475f-1f8e-4f78-b19a-0f61ddf22c99)
+](Add screenshot 3 here with proper name)
 *Add caption explaining what this shows*
 
 # Diagrams
